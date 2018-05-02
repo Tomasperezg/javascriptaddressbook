@@ -32,18 +32,28 @@ class Addressbook {
   }
 }
 let book = new Addressbook();
-console.log(book.contacts);
+// console.log(book.contacts);
 // book.Add();
 // console.log(book.contacts);
 
 while(true){
-  let input = prompt("do you wish to add(a) or quit(q)?");
+  let input = prompt("do you wish to add(a) or quit(q) delete(d) or print(p)?");
   if(input === "a"){
     book.Add();
   }
   else if(input === "q"){
     console.log("goodbye");
     break;
+  }else if(input === "p"){
+    console.log(book.contacts);
+    break;
+  }
+  else if(input === "d"){
+    let choice = prompt("What item would you like to remove? EX:1,2,3..?")
+    book.contacts.splice(0, choice);
+    console.log(book.contacts);
+    break;
+
   }
   else{
     console.log("sorry i dont understand you!");
