@@ -9,14 +9,12 @@ class Contact {
 
 }
 
-
-
 class Addressbook {
   constructor(){
     this.contacts = [];
     let tomas = new Contact("jimmy", "jymmy@email.com", "432-234-3456", "friend");
     this.contacts[0] = tomas;
-    let billy = new Contact("billy", "billy@gmail.com", "180-234-billy", "child hood friend");
+    let billy = new Contact("billy", "billy@gmail.com", "180-234-billy", "childhood friend");
     this.contacts[1] = billy;
 
     }
@@ -50,7 +48,7 @@ while(true){
   }
   else if(input === "d"){
     let choice = prompt("What item would you like to remove? EX:1,2,3..?")
-    book.contacts.splice(0, choice);
+    book.contacts.splice(2, choice);
     console.log(book.contacts);
     break;
 
