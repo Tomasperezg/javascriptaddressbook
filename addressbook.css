@@ -1,0 +1,34 @@
+body{
+  background-image: url(imgs/background.jpeg);
+  text-align: center;
+}
+.box{
+  /* background-color: #d9d9d9; */
+  display: block;
+  margin: auto;
+  width: 50%;
+  opacity: 1;
+  border: 1px;
+  border-style: solid;
+  background-color: #DCDCDC;
+  opacity: .9;
+
+
+}
+input{
+  margin-top: 20px;
+  background-color: white;
+}
+.add{
+  margin-top: 20px;
+  width: 135px;
+}
+
+
+input[type=text]{
+  background-color: white;
+  opacity: 1;
+}
+h2{
+  color: white;
+}
