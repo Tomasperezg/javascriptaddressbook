@@ -1,9 +1,11 @@
 body{
-  background-image: url(imgs/background.jpeg);
+  background-image: url(imgs/black.jpg);
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: auto;
 }
 .box{
-  /* background-color: #d9d9d9; */
   display: block;
   margin: auto;
   width: 50%;
@@ -30,5 +32,24 @@ input[type=text]{
   opacity: 1;
 }
 h2{
+  color: white;
+}
+p{
+  display: block;
+}
+#info{
+  position: fixed;
+  bottom: 0;
+  /* border-style: dotted;
+  border-color: black; */
+  display: inline-block;
+  background-color: none;
+  color: white;
+}
+#info1{
+  position: fixed;
+  display: block;
+  bottom: 0;
+  background-color: none;
   color: white;
 }

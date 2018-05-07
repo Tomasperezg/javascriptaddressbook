@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="addressbook.css" rel="stylesheet">
   <script src="addressbook.js"></script>
 </head>
 <body>
   <div class="box">
-    <form id="??" action="/action_page.php">
       <h2>My contacts</h2>
-      <div class="questions">
-        <input type="text" name="Name" placeholder="NAME"><br>
-        <input type="text" name="Email" placeholder="EMAIL"><br>
-        <input type="text" name="Phone" placeholder="PHONE"><br>
-        <input type="text" name="Relation" placeholder="RELATION"><br>
-        <input type="button" onclick="book.contacts()" value="Submit"><br>
+      <form name="myForm">
+        <input type="text" name="name" placeholder="Name"><br>
+        <input type="text" name="Email" placeholder="Email"><br>
+        <input type="text" name="phone" placeholder="Phone"><br>
+        <input type="text" name="relation" placeholder="Relation"><br>
+        <input type="Submit" onclick="Add(); return false" value="Add" id="submit">
+      </form>
+<div id="info">
+  <p id="fullname"></p>
+  <p id="theEmail"></p>
+  <p id="thePhone"></p>
+  <p id="therelation"></p>
+<input name="btn2" type="button" id="btn2" value="Delete" onclick="removeDiv2()">
+</div>
+<!-- <div class="flip">
+  <input type="submit" onclick="Book();">
+</div> -->
+<div id="info1">
+  <p>
+    Name: jimmy<br>
+    Email: jimmy@email.com<br>
+    Phone: 616-333-2345<br>
+    Relation: friend
+  </p>
+<input name="btn" type="button" id="btn"value="Delete" onclick="removeDiv()">
+</div>
 
-
-     </div>
-    </form>
-
-  </div>
-
-
+ </div>
 </body>
 </html>
